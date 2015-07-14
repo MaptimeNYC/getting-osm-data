@@ -1,30 +1,33 @@
 # getting-osm-data
 
-##LICENSING
+###licensing
 
-##WHAT DOES OSM DATA LOOK LIKE?
+###what does osm data look like?
 
-######WHAT'S STORED IN OSM?
-######FORMATS
+######what's stored in OSM?
+######formats
 XML--Native
 PBF
 
-######SCALE
+######scale
 Planet
 Continent
 Metro-Area
 
-##DATA EXTRACTION TOOLS
+
+###data extraction tools
+
+###exercise
 
 
 
 
-##
-Resources
-------
+
+###resources
 * [OSM- Downloading Data](http://wiki.openstreetmap.org/wiki/Downloading_data)
 * []()
 * []()
-######Data
+
+######data
 * []()
 * []()
