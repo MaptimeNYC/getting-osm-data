@@ -1,5 +1,4 @@
 # getting-osm-data
-======
 
 ##LICENSING
 
