@@ -106,11 +106,14 @@ How would we query for bars near us?
 
 We're looking for a specific type of node.  
 This tag will be helpful: 
-![amenity_bar](https://cloud.githubusercontent.com/assets/5316367/8736503/0bf95a7e-2be7-11e5-858c-4545e0b6d46d.png)
-
-
+![amenity_bar](https://cloud.githubusercontent.com/assets/5316367/8736503/0bf95a7e-2be7-11e5-858c-4545e0b6d46d.png)  
+  
 Since the Overpass Query Language can be confusing, let's use a tool that helps us build our query.  
+  
 [Overpass Turbo](http://overpass-turbo.eu/)
+  
+Once we're comfortable with the language for querying, we can directly download data from the command line or through a script:  
+
 
 overpass api  
 <pre><code>wget -O osm_pubs.osm "http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="pub"](40.70995118412107,-73.9604287147522,40.718236246820766,-73.9545578956604););out body;>;out skel qt;"
