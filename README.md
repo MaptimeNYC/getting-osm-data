@@ -77,14 +77,20 @@ Recognize the license (link to the copyright page)
 
 ###example
 
-Let's use OSM data to tell us where we could go for a drink after Maptime.  
+We'll use OSM data to tell us where we could grab drinks.    
 
-All we need to know is:  
+We need to know:   
 
 1.**Where we are**  
 2.**Where the bars are**  
   
-  We'll use the Overpass API.  
+  We'll use the Overpass API since we don't need the entire city's data.  We're just asking for a couple of nodes nearby.  
+    
+    [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)
+<!--- "The Overpass API (or OSM3S) is a read-only API that serves up custom selected parts of the OSM map data. It acts as a database over the web: the client sends a query to the API and gets back the data set that corresponds to the query." -->
+Allows you to request specific data (with a query).  
+Has it's own [query language](http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).    
+Can be used as a backend for live-osm applications.  
 
 **Get our location**  
 
@@ -92,11 +98,7 @@ All we need to know is:
   
 
 **Get bar locations:**  
-[Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)
-<!--- "The Overpass API (or OSM3S) is a read-only API that serves up custom selected parts of the OSM map data. It acts as a database over the web: the client sends a query to the API and gets back the data set that corresponds to the query." -->
-Allows you to request specific data (with a query).  
-Has it's own [query language](http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).    
-Can be used as a backend for live-osm applications.  
+
 
 Since the Overpass Query Language can be confusing, let's use a tool that helps us build our query.  
 [Overpass Turbo](http://overpass-turbo.eu/)
