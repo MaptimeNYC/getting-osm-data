@@ -102,6 +102,12 @@ Can be used as a backend for live-osm applications.
 
 **Get bar locations:**  
 
+How would we query for bars near us?  
+
+We're looking for a specific type of node.  
+This tag will be helpful: 
+![amenity_bar](https://cloud.githubusercontent.com/assets/5316367/8736503/0bf95a7e-2be7-11e5-858c-4545e0b6d46d.png)
+
 
 Since the Overpass Query Language can be confusing, let's use a tool that helps us build our query.  
 [Overpass Turbo](http://overpass-turbo.eu/)
