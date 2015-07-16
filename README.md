@@ -81,7 +81,7 @@ Let's use OSM data to tell us where we could go for a drink after Maptime.
 
 All we need to know is:  
 
-1.**Where we are** 
+1.**Where we are**  
 2.**Where the bars are**  
   
   We'll use the Overpass API.  
