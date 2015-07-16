@@ -54,8 +54,8 @@ It's helpful to [look at standards](http://wiki.openstreetmap.org/wiki/Tags) for
 
 There are two ways we can work with OSM data:  
   
-  1.Download a data file and work with it locally (PostGIS or QGIS)  
-  2.Directly query the OSM dataset with the Overpass API  
+  1.  Download a data file and work with it locally (PostGIS or QGIS)  
+  2.  Directly query the OSM dataset with the Overpass API  
   
 ####Downloading data  
   
