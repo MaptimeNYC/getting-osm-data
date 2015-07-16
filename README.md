@@ -1,15 +1,25 @@
 # getting-osm-data
 
-###licensing  
+###[what is osm](http://maptime.io/osm-101/#0)  
+"wikipedia of maps"
 
-"OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF)."
+so, a global dataset of anything people map  
 
-Give Attribution  
-Recognize the license (link to the copyright page)
-###OSM data
+And it's yours (and everyone's)  
 
-######what's inside OSM?
-######formats
+more than just basemaps, a huge source of data  
+
+
+###why is this exciting?
+You can use it to power your apps and do cool data analysis  
+
+Like an app that tells you the [cheapest cup of coffee in your city](http://www.macwright.org/coffeedex/index.html#/)  
+
+To using OSM data, we need to know what's actually in the data & how to access it  
+
+###OSM data  
+######what's inside OSM?  
+######formats  
 XML (native) 
 PBF  
 GeoJSON  
@@ -21,7 +31,13 @@ Continent
 Metro-Area  
 
 
-###osm data sources
+###osm data sources  
+###licensing  
+
+"OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF)."
+
+Give Attribution  
+Recognize the license (link to the copyright page)  
 
 ###osm data tools  
 [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)
