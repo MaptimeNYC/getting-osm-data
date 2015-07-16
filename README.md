@@ -73,7 +73,7 @@ Shapefile
 
 Give Attribution  
 Recognize the license (link to the copyright page)  
-INSERT osm_copyright.png  
+![](https://cloud.githubusercontent.com/assets/5316367/8735579/021fc2b0-2be0-11e5-814f-f996b599e407.png)
 
 ###osm data tools  
 
