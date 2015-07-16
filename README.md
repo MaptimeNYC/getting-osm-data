@@ -49,7 +49,9 @@ A cafe would look like this:
 ![](https://cloud.githubusercontent.com/assets/5316367/8734838/a125cc48-2bda-11e5-863f-24abd0e89701.png)
   
 
-It's helpful to [look at standards](http://wiki.openstreetmap.org/wiki/Tags) for tagging OSM features.  
+Let's go to [OpenStreetMap](https://www.openstreetmap.org/#map=16/40.7147/-73.9599) and explore the dataset a bit.    
+
+It's helpful to [look at standards](http://wiki.openstreetmap.org/wiki/Tags) for tagging OSM features when you are editing or querying data.    
 
 
 ###using osm data  
