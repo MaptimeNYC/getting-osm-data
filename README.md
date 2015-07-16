@@ -16,7 +16,8 @@ You can use it to power your apps and do cool data analysis
 Like an app that tells you the [prices of a cup of coffee in your city](http://www.macwright.org/coffeedex/index.html#/)  
   
   
-
+  
+  
 To start using OSM data, we need to know  
 
 1. **What's in the dataset**  
@@ -36,7 +37,10 @@ To start using OSM data, we need to know
 
 Each node, way, or relation has information stored about it.  
 
-All information is stored as tags of Key-Value pairs.
+All information is stored as tags of *Key-Value* pairs.
+  
+So a node with a name of New York City would store it with a tag like this:  
+**["name":"New York City"]**
 
 
 A cafe would look like this:  
