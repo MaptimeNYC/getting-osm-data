@@ -66,7 +66,7 @@ There are two ways we can work with OSM data:
   
 **Available formats:**  
 XML (native) 
-PBF (xml binary-smaller and faster) 
+PBF (xml binary-smaller and faster)  
 GeoJSON  
 Shapefile  
 
