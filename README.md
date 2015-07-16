@@ -40,7 +40,7 @@ All information is stored as tags of Key-Value pairs.
 
 
 A cafe would look like this:  
-INSERT keyvalues.png  
+![](https://cloud.githubusercontent.com/assets/5316367/8734838/a125cc48-2bda-11e5-863f-24abd0e89701.png)
   
 
 It's helpful to [look at standards](http://wiki.openstreetmap.org/wiki/Tags) for tagging OSM features.  
