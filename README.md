@@ -52,25 +52,28 @@ There are two ways we can work with OSM data:
   
   1.Download a data file and work with it locally (PostGIS or QGIS)  
   2.Directly query the OSM dataset with the Overpass API  
-######formats  
-XML (native) 
-PBF  
-GeoJSON  
-Shapefile  
-
-######scale
+  
+####Downloading data  
+  
+**Common sources:**  
 [Planet.osm](http://wiki.openstreetmap.org/wiki/Planet.osm)- a 575 gb file of the global dataset  
 [Continent](http://download.geofabrik.de)  
 [Metro-Area](https://mapzen.com/data/metro-extracts)  
+  
+**Available formats:**  
+XML (native) 
+PBF (xml binary-smaller and faster) 
+GeoJSON  
+Shapefile  
 
 
-###osm data sources  
 ###licensing  
 
 "OpenStreetMap® is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF)."
 
 Give Attribution  
 Recognize the license (link to the copyright page)  
+INSERT osm_copyright.png  
 
 ###osm data tools  
 
