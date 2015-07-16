@@ -14,6 +14,8 @@ More than just basemaps, a huge source of data
 You can use it to power your apps and do cool data analysis  
 
 Like an app that tells you the [prices of a cup of coffee in your city](http://www.macwright.org/coffeedex/index.html#/)  
+  
+  
 
 To start using OSM data, we need to know  
 
@@ -44,6 +46,12 @@ INSERT keyvalues.png
 It's helpful to [look at standards](http://wiki.openstreetmap.org/wiki/Tags) for tagging OSM features.  
 
 
+###using osm data  
+
+There are two ways we can work with OSM data:  
+  
+  1.Download a data file and work with it locally (PostGIS or QGIS)  
+  2.Directly query the OSM dataset with the Overpass API  
 ######formats  
 XML (native) 
 PBF  
@@ -65,41 +73,43 @@ Give Attribution
 Recognize the license (link to the copyright page)  
 
 ###osm data tools  
+
+
+###example
+
+Let's use OSM data to tell us where we could go for a drink after Maptime.  
+
+All we need to know is:  
+
+1.**Where we are** 
+2.**Where the bars are**  
+  
+  We'll use the Overpass API.  
+
+**Get our location**  
+
+  143 Roebling Street, #2, Brooklyn, NY  
+  
+
+**Get bar locations:**  
 [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)
 <!--- "The Overpass API (or OSM3S) is a read-only API that serves up custom selected parts of the OSM map data. It acts as a database over the web: the client sends a query to the API and gets back the data set that corresponds to the query." -->
 Allows you to request specific data (with a query).  
 Has it's own [query language](http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).    
 Can be used as a backend for live-osm applications.  
-Cannot query historical data.  
 
-###example
-
-Getting OSM data to tell us where there are close places to grab drinks after Maptime.
-
-All we need to know is:  
-
-1.**Where we are** 
-2.**Where the bars are**
-
-Get our location  
-
-CartoDB Office:  
-143 Roebling Street, #2, Brooklyn, NY  
-OSM node ID #2839628042  
-  
-
-Get bar locations:
+Since the Overpass Query Language can be confusing, let's use a tool that helps us build our query.  
+[Overpass Turbo](http://overpass-turbo.eu/)
 
 overpass api  
-<pre><code>wget -O maptime.bars.osm "http://overpass-api.de/api/interpreter?data=node(40.712327,-73.959045,40.715840,-73.955360)[amenity=\"pub\"];out;"
+<pre><code>wget -O osm_pubs.osm "http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="pub"](40.70995118412107,-73.9604287147522,40.718236246820766,-73.9545578956604););out body;>;out skel qt;"
 </code></pre>
 
 
 
 
 
-###resources
+###additional resources
 * [OSM- Downloading Data](http://wiki.openstreetmap.org/wiki/Downloading_data)
-* [Test your overpass query](http://overpass-turbo.eu/)
 * []()
 
