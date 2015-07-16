@@ -37,14 +37,21 @@ Getting OSM data to tell us where there are close places to grab drinks after Ma
 
 All we need to know is:  
 
-1.Our Location
-2.Location of bars
+1.Our Location  
+2.Location of bars  
 
 Get our location  
 
 CartoDB Office:  
 143 Roebling Street, #2, Brooklyn, NY  
 OSM node ID #2839628042  
+  
+
+Get bar locations:
+
+overpass api  
+<pre><code>wget -O maptime.bars.osm "http://overpass-api.de/api/interpreter?data=node(40.712327,-73.959045,40.715840,-73.955360)[amenity=\"pub\"];out;"
+</code></pre>
 
 
 
@@ -52,7 +59,7 @@ OSM node ID #2839628042
 
 ###resources
 * [OSM- Downloading Data](http://wiki.openstreetmap.org/wiki/Downloading_data)
-* []()
+* [Test your overpass query](http://overpass-turbo.eu/)
 * []()
 
 ######data
