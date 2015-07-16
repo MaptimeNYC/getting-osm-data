@@ -15,6 +15,8 @@ You can use it to power your apps and do cool data analysis
 
 Like an app that tells you the [prices of a cup of coffee in your city](http://www.macwright.org/coffeedex/index.html#/)  
   
+Or you could use it to make [cool maps](http://8bitcity.com/map?New%20York).
+  
   
   
   
@@ -59,17 +61,21 @@ There are two ways we can work with OSM data:
   
 ####Downloading data  
   
-**Common sources:**  
-[Planet.osm](http://wiki.openstreetmap.org/wiki/Planet.osm)- a 575 gb file of the global dataset  
-[Continent](http://download.geofabrik.de)  
-[Metro-Area](https://mapzen.com/data/metro-extracts)  
+*Common sources:*   
+* [Planet.osm](http://wiki.openstreetmap.org/wiki/Planet.osm)- a 575 gb file of the global dataset  
+* [Continent](http://download.geofabrik.de)  
+* [Metro-Area](https://mapzen.com/data/metro-extracts)  
   
-**Available formats:**  
-XML (native)  
-PBF (xml binary-smaller and faster)  
-GeoJSON  
-Shapefile  
+*Available formats:*  
+* XML (native)  
+* PBF (xml binary-smaller and faster)  
+* GeoJSON  
+* Shapefile  
 
+####osm data tools  
+* [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)    
+* [Osm2pgsql](http://wiki.openstreetmap.org/wiki/Osm2pgsql)  
+* [ogr2ogr](http://www.gdal.org/ogr2ogr.html)    
 
 ###[licensing](https://www.openstreetmap.org/copyright)  
 
@@ -78,8 +84,6 @@ Shapefile
 Give Attribution  
 Recognize the license (link to the copyright page)  
 ![](https://cloud.githubusercontent.com/assets/5316367/8735579/021fc2b0-2be0-11e5-814f-f996b599e407.png)
-
-###osm data tools  
 
 
 ###example
@@ -97,7 +101,7 @@ We need to know:
 <!--- "The Overpass API (or OSM3S) is a read-only API that serves up custom selected parts of the OSM map data. It acts as a database over the web: the client sends a query to the API and gets back the data set that corresponds to the query." -->
 Allows you to request specific data (with a query).  
 Has it's own [query language](http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).    
-Can be used as a backend for live-osm applications.  
+Can be used as a backend for real-time osm applications.  
 
 **Get our location**  
 
@@ -114,13 +118,15 @@ This tag will be helpful:
   
 Since the Overpass Query Language can be confusing, let's use a tool that helps us build our query.  
   
-[Overpass Turbo](http://overpass-turbo.eu/)
+[Overpass Turbo](http://overpass-turbo.eu/)  
   
 Once we're comfortable with the language for querying, we can directly download data from the command line or through a script:  
 
 
-overpass api  
-<pre><code>wget -O osm_pubs.osm "http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="pub"](40.70995118412107,-73.9604287147522,40.718236246820766,-73.9545578956604););out body;>;out skel qt;"
+*overpass api*  
+
+
+<pre><code>wget -O osm_bars.osm "http://overpass-api.de/api/interpreter?data=[out:json][timeout:25];(node["amenity"="bar"](40.70995118412107,-73.9604287147522,40.718236246820766,-73.9545578956604););out body;>;out skel qt;"
 </code></pre>
 
 
