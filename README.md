@@ -125,5 +125,6 @@ overpass api
 
 ###additional resources
 * [OSM- Downloading Data](http://wiki.openstreetmap.org/wiki/Downloading_data)
-* []()
+* [osm2pgsql-Get your osm data into PostGIS](http://wiki.openstreetmap.org/wiki/Osm2pgsql)  
+* [Osmosis-helpful tool for processing osm data](http://wiki.openstreetmap.org/wiki/Osmosis)
 
