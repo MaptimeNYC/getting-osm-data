@@ -1,13 +1,13 @@
 # getting-osm-data
 
 ###[what is osm](http://maptime.io/osm-101/#0)  
-"wikipedia of maps"
+"Wikipedia of maps"
 
-so, a global dataset of anything people map  
+So, a global dataset of anything people map  
 
 And it's yours (and everyone's)  
 
-more than just basemaps, a huge source of data  
+More than just basemaps, a huge source of data  
 
 
 ###why is this exciting?
@@ -15,7 +15,11 @@ You can use it to power your apps and do cool data analysis
 
 Like an app that tells you the [prices of a cup of coffee in your city](http://www.macwright.org/coffeedex/index.html#/)  
 
-To using OSM data, we need to know what's actually in the data & how to access it  
+To start using OSM data, we need to know  
+
+1. **What's in the dataset**  
+
+2. **How to access it**  
 
 ###OSM data  
 ######what's inside OSM?  
@@ -28,11 +32,16 @@ To using OSM data, we need to know what's actually in the data & how to access i
 
 
 
-Each element has information, or attributes, stored about it.  
+Each node, way, or relation has information stored about it.  
 
-These are stored as Key-Value pairs.  
+All information is stored as tags of Key-Value pairs.
 
-Let's take a look at what this all means.
+
+A cafe would look like this:  
+INSERT keyvalues.png  
+  
+
+It's helpful to [look at standards](http://wiki.openstreetmap.org/wiki/Tags) for tagging OSM features.  
 
 
 ######formats  
@@ -42,9 +51,9 @@ GeoJSON
 Shapefile  
 
 ######scale
-Planet  
-Continent  
-Metro-Area  
+[Planet.osm](http://wiki.openstreetmap.org/wiki/Planet.osm)- a 575 gb file of the global dataset  
+[Continent](http://download.geofabrik.de)  
+[Metro-Area](https://mapzen.com/data/metro-extracts)  
 
 
 ###osm data sources  
@@ -69,8 +78,8 @@ Getting OSM data to tell us where there are close places to grab drinks after Ma
 
 All we need to know is:  
 
-1.Our Location  
-2.Location of bars  
+1.**Where we are** 
+2.**Where the bars are**
 
 Get our location  
 
@@ -94,6 +103,3 @@ overpass api
 * [Test your overpass query](http://overpass-turbo.eu/)
 * []()
 
-######data
-* []()
-* []()
