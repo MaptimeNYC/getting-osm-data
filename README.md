@@ -65,7 +65,7 @@ There are two ways we can work with OSM data:
 [Metro-Area](https://mapzen.com/data/metro-extracts)  
   
 **Available formats:**  
-XML (native) 
+XML (native)  
 PBF (xml binary-smaller and faster)  
 GeoJSON  
 Shapefile  
