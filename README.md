@@ -13,12 +13,28 @@ more than just basemaps, a huge source of data
 ###why is this exciting?
 You can use it to power your apps and do cool data analysis  
 
-Like an app that tells you the [cheapest cup of coffee in your city](http://www.macwright.org/coffeedex/index.html#/)  
+Like an app that tells you the [prices of a cup of coffee in your city](http://www.macwright.org/coffeedex/index.html#/)  
 
 To using OSM data, we need to know what's actually in the data & how to access it  
 
 ###OSM data  
 ######what's inside OSM?  
+[The Elements](http://wiki.openstreetmap.org/wiki/Elements) of OSM data:  
+
+
+* [Nodes](http://wiki.openstreetmap.org/wiki/Elements#Node)  
+* [Ways](http://wiki.openstreetmap.org/wiki/Way)  
+* [Relationships](http://wiki.openstreetmap.org/wiki/Relation)
+
+
+
+Each element has information, or attributes, stored about it.  
+
+These are stored as Key-Value pairs.  
+
+Let's take a look at what this all means.
+
+
 ######formats  
 XML (native) 
 PBF  
