@@ -97,10 +97,9 @@ We need to know:
 1.**Where we are**  
 2.**Where the bars are**  
   
-  We'll use the Overpass API since we don't need the entire city's data.  We're just asking for a couple of nodes nearby.  
-    
-[Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)
-<!--- "The Overpass API (or OSM3S) is a read-only API that serves up custom selected parts of the OSM map data. It acts as a database over the web: the client sends a query to the API and gets back the data set that corresponds to the query." -->
+We'll use the [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API) since we don't need the entire city's data.  We're just asking for a couple of nodes nearby.  
+
+
 Allows you to request specific data (with a query).  
 Has it's own [query language](http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide).    
 Can be used as a backend for real-time osm applications.  
